@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO CON PSEUDOSELECTORES</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section class="container flex">
+
+        <h3>Bienvenido al sitio</h3>
+        <h4>Registrate completando el formulario</h4>
+
+        <form action="./datos/form.php" class="flex" method="POST">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="pass">crea tu contraseña:</label>
+            <input type="password" name="pass" id="pass">
+            <div class="select flex">
+            <label for="pais">Elige tu pais:</label>
+            <select name="pais" id="pais">
+            </div>
+                <optgroup>Paises</optgroup>
+                <option value="Colombia">Colombia</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+            <label for="genero" class="label-genero">Elige lo que corresponda:</label>
+            <div><input type="radio" name="genero" id="varon"><label for="varon">varon</label></div>
+            <div><input type="radio" name="genero" id="mujer"><label for="mujer">mujer</label></div>
+            <div><input type="radio" name="genero" id="otro"><label for="otro">otro</label></div>
+
+            <label for="checkbox" class="margin-top">Acepto las condiciones para continuar</label>
+            <div>
+                <input type="checkbox" name="condiciones" id="acepto"/><label for="acepto"></label>
+            </div>
+
+            <button type="submit">Registrarme</button>
+
+        </form>
+      </section>
+    </main>
+
+    <aside></aside>
+
+    <footer></footer>
+  </body>
+</html>

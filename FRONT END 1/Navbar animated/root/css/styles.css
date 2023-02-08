@@ -1,0 +1,87 @@
+/* VICTOR COMO ESTAS, TE COMENTO QUE MI VIEWPORT DESKTOP ES DE 1920x1080 GRACIAS. */
+
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* ESTILOS DEL NAV */
+
+.navbar {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(235, 213, 255);
+}
+
+.lista {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista li {
+    font-size: 2rem;
+    transition: transform 0.6s linear;
+}
+
+.container-flex li:nth-child(1) {
+    animation: aparecer 1s linear;
+}
+
+.container-flex li:nth-child(2) {
+    animation: aparecer 2s linear;
+}
+
+.container-flex li:nth-child(3) {
+    animation: aparecer 3s linear;
+}
+
+.container-flex li:nth-child(4) {
+    animation: aparecer 4s linear;
+}
+
+.container-flex li:nth-child(5) {
+    animation: aparecer 5s linear;
+}
+
+
+/* ANIMACIONES ON THE GO -> para llevar */
+
+.container-flex li:hover {
+    cursor: pointer;
+    color: rgb(0, 15, 146);
+    opacity: 60%;
+    transform: translateX(25px);
+}
+
+
+/* ANIMACION CON KEYFRAMES */
+
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 10%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+$color-principal: rgb(210, 88, 221);
+$ancho-principal: 120px;
+$alto-principal: 50px;
+
+.boton {
+    cursor: pointer;
+    color: black;
+    padding: 10px 20px;
+    &-uno {
+        @extend .boton;
+        background-color: $color-principal;
+        width: $ancho-principal;
+        height: $alto-principal;
+    }
+    &-dos {
+        @extend .boton;
+        background-color: $color-principal;
+        width: 80px;
+        height: 30px;
+    }
+    &-tres {
+        @extend .boton;
+        background-color: aqua;
+        width: $ancho-principal;
+        height: $alto-principal;
+        border-radius: 10px;
+    }
+}

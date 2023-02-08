@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<header>
+    <section>
+        <h3>20% de descuento en todos los productos</h3>
+    </section>
+    <section>
+        <img src="./img/Logo.png" alt="logo">
+        <h2>Nombre Tienda</h2>
+    </section>
+    <nav>
+        <ul>
+            <li>Contacto</li>
+            <li>Registrarme</li>
+            <li>Ingresar</li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section>
+        <h1>Añadí tu super!</h1>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+        <div>
+            <form action="BaseDeDatos.js" method="GET">
+                <label for="nombre">*Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion" id="descripcion">Descripcion</textarea>
+            </form>
+        </div>
+        <div>
+            <form action="BaseDeDatos.js" method="GET">
+                <label for="especie">*Especie</label>
+                <select name="especie">
+                    <option value="canino">Canino</option>
+                    <option value="felino">Felino</option>
+                    <option value="humano">Humano</option>
+                </select>
+                <label>Agregar foto</label>
+                <input type="file" name="fot-perfil">
+                <label>Poderes</label>
+                <label>
+                    <input type="checkbox" name="poderes" value="volar">Volar
+                </label>
+                <label>
+                    <input type="checkbox" name="poderes" value="Superinteligencia">Superinteligencia
+                </label>
+                <label>
+                    <input type="checkbox" name="poderes" value="rayo laser">Vista de rayo laser
+                </label>
+                <label>
+                    <input type="checkbox" name="poderes" value="Billetera gorda">Billetera gorda
+                </label>
+                <label>Tipo de Personaje</label>
+                <label>
+                    <input type="radio" name="personaje" value="heroe">Heroe / Heroina
+                </label>
+                <label>
+                    <input type="radio" name="personaje" value="villano">Villano / Villana
+                </label>
+            </form>
+
+        </div>
+        <button>
+            <p>Añadir</p>
+        </button>
+    </section>
+
+    
+</body>
+<footer>
+    <p>Todos los derechos reservados</p>
+</footer>
+</html>

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* SINK */
+@-webkit-keyframes animacion-abajo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes animacion-abajo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes animacion-arriba {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes animacion-arriba {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.animacion-abajo:hover {
+  -webkit-animation: animacion-abajo 3s linear;
+          animation: animacion-abajo 3s linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.animacion-arriba:hover {
+  -webkit-animation: animacion-arriba 3s linear;
+          animation: animacion-arriba 3s linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+/* & shorthand que sirve para concatenar */
+.container-padre {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container-padre .card {
+  background-color: rgb(121, 121, 121);
+  color: rgb(8, 8, 61);
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #c7c7c7;
+  box-shadow: 20px 20px 60px #a9a9a9, -20px -20px 60px #e5e5e5;
+  transition: all 0.75s;
+}
+
+/* EL MIXIN DEBE REUTILIZARSE EN EL MISMO ARCHIVO */
+.parrafo {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #FFFF00;
+  font-style: normal;
+}
+
+/* armar clase para titulos */
+.titulo, .titulo-principal {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #ff0000;
+  font-style: normal;
+}
+.titulo-principal {
+  font-weight: 800;
+}
+
+/* armar clase para texto tipo copyright */
+.texto-simple {
+  font-size: 11px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: rgb(164, 164, 164);
+  font-style: normal;
+}
+
+body {
+  background-color: #c7c7c7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* USO DE PARTIALS -> 
+BLOQUE DE CODIGO QUE YO PIENSO REUTILIZAR EN OTROS PROYECTOS
+EL ARCHIVO SE ESCRIBE CON UN "_"ADELANTE DEL NOMBRE */
+/* LLAMARLO AL PARTIAL BUTTONS */
+/* TRAE EL CODIGO DE FLEXCARDS Y ANIMATIONS */
+/* D.R.Y 
+Don't Repeat Yourself -> No te repitas. 
+*/
+/* SEPARATION OF CONCERNS -> 
+Separar según función y jurisdicción
+*//*# sourceMappingURL=mainsass.css.map */

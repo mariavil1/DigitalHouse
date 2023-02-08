@@ -1,0 +1,97 @@
+/* VICTOR  NO DORMI ESTA SEMANA. PD: MI VIEWPORT ES DE 1366px */
+
+
+/* ESTILOS GENERALES */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* TIPOGRAFIA BE VIETNAM PRO */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+
+/* ESTILOS DEL HEADER */
+
+.header-principal {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(175, 249, 249);
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.header-principal p {
+    background-color: #000;
+    padding: 5px;
+    margin: 0;
+}
+
+.header-principal nav {
+    width: 30%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+li a:hover {
+    opacity: 60%;
+}
+
+.btn {
+    border: 2px solid #000;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: black;
+    color: #FFF;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+
+/* ESTILOS DE HOVER */
+
+
+/* MEDIA QUERY - MOBILE */
+
+
+/* (min-width: 320px) and */
+
+@media (max-width: 480px) {
+    /* ESTILOS DEL HEADER */
+    .container-flex {
+        justify-content: space-between;
+    }
+    .hamburguesa {
+        display: block;
+        margin-right: 5%;
+    }
+    .header-principal p {
+        margin-left: 5%;
+    }
+    /* CHEQUEAR CUANDO ALGO NO FUNCIONE QUE EL SELECTOR SEA MAS ESPECIFICO */
+    nav {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    /* MAIN */
+}

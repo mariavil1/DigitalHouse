@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* Forma y tamaño */
+/* Al armar tu boton, respetar la relación que el width debe ser mayor al height */
+.btn-azul, .btn-azul-grande, .btn-azul-mediano, .btn-azul-chiquito {
+  background-color: #0000ff;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-azul-chiquito {
+  width: 100px;
+  height: 25px;
+  padding: 12px 20px;
+  min-width: 100px;
+  min-height: 25px;
+}
+.btn-azul-mediano {
+  width: 250px;
+  height: 45px;
+  padding: 12px 20px;
+  min-width: 100px;
+  min-height: 25px;
+}
+.btn-azul-grande {
+  width: 300px;
+  height: 55px;
+  padding: 12px 20px;
+  min-width: 100px;
+  min-height: 25px;
+}
+.btn-rojo, .btn-rojo-grande, .btn-rojo-mediano, .btn-rojo-chiquito {
+  background-color: #ff0000;
+  color: #fff;
+  border: 2px solid #000;
+}
+.btn-rojo-chiquito {
+  width: 36px;
+  height: 24px;
+  padding: 12px 20px;
+  min-width: 100px;
+  min-height: 25px;
+}
+.btn-rojo-mediano {
+  width: 40px;
+  height: 30px;
+  padding: 12px 20px;
+  min-width: 100px;
+  min-height: 25px;
+}
+.btn-rojo-grande {
+  width: 300px;
+  height: 55px;
+  padding: 12px 20px;
+  min-width: 100px;
+  min-height: 25px;
+}
+
+/* Vamos a traernos partials, cada uno con algún aspecto que necesitemos para usar bien los botones */
+/* @use "_animaciones.scss";
+@use "_formas.scss";
+@use "_elementos.scss"; */
+/* DRY y Separation of Concerns */
+/* moverlo a otro partial de testeo */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  gap: 10px;
+  border: 1px solid #AAA;
+  padding: 10px;
+}/*# sourceMappingURL=botones.css.map */

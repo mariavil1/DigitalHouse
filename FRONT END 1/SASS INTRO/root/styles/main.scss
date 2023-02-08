@@ -1,0 +1,62 @@
+/* ES UN ARCHIVO SASS QUE USA LA SINTAXIS SCSS */
+
+
+/* VARIABLES NESTING Y SHORTHAND */
+
+
+/* las variables en SASS se escriben comenzando con el signo pesos $ */
+
+$color-primario: #3a37e7;
+$ancho-card: 150px;
+$alto-card: 350px;
+
+.header {
+    background-color: $color-primario;
+}
+
+.cards {
+    border: 2px solid $color-primario;
+}
+
+
+/* nesting es lo que conocemos como ANIDAMIENTO */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    img {
+        width: 40px;
+        height: auto;
+        border: 2px solid $color-primario;
+    }
+}
+
+
+/* shorthand es una manera de vincular clases, estilos, todo lo que se aplique a través de una cadena de caracteres */
+
+
+/* extend que permite reutilizar codigo previo */
+
+.btn {
+    width: 120px;
+    height: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    &-pri {
+        @extend .btn;
+        background-color: $color-primario;
+    }
+    &-sec {
+        @extend .btn;
+        border: 2px solid $color-primario;
+    }
+    &-alt {
+        @extend .btn;
+        color: $color-primario;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}

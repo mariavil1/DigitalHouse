@@ -1,0 +1,83 @@
+body {
+    margin: 0%;
+}
+.cabecero {
+    display: flex;
+    background-color: #222222;
+    color: white;
+    justify-content: space-around;
+}
+.flex {
+    display: inline-block;
+    list-style: none;
+}
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F0A83E;
+    text-decoration: none;
+    list-style: none;
+}
+.apertura {
+    background-image: url(/root/img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    position: relative;
+}
+.apertura h2 {
+    color: black;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    left: 75%;
+    top: 30%;
+    padding: 15px;
+}
+.apertura p {
+    display: flex;
+    position: relative;
+    left: 80%;
+    top: 50%;
+}
+.apertura button {
+    background-color: #F0A83E;
+    display: flex;
+    position: absolute;
+    left: 82%;
+    top: 70%;
+    border: none;
+    color: white;
+    height: 30px;
+
+}
+.inicio {
+    position: relative;
+    left: 40%;
+}
+.inicio1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.productos {
+    display: flex;
+
+}
+.contacto {
+
+}
+.prepiedepagina {
+
+}
+.informacion {
+
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}

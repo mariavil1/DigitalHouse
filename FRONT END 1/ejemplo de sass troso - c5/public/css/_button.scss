@@ -1,0 +1,17 @@
+@mixin button($borde, $color, $fondo) {
+    /* armar al menos 5 propiedades y utilizar las variables que estan ahi arriba */
+}
+
+
+/* llamar al mixin dentro de cada boton */
+
+.contenedor-botones {
+    display: flex;
+    .boton-primario {
+        @include button(2px, #000, #fdf4f4)
+    }
+    .boton-secundario {
+        @include button(4px, #ec1c1c , #7877d6)
+    }
+    .boton-extra {}
+}

@@ -1,0 +1,43 @@
+/* SINK */
+
+@keyframes animacion-abajo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animacion-arriba {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animacion {
+    &-abajo {
+        &:hover {
+            animation: animacion-abajo 3s linear;
+            animation-iteration-count: 1;
+        }
+    }
+    &-arriba {
+        &:hover {
+            animation: animacion-arriba 3s linear;
+            animation-iteration-count: 1;
+        }
+    }
+}
+
+
+/* & shorthand que sirve para concatenar */

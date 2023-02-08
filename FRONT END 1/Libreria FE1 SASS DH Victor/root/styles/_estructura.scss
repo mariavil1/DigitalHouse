@@ -1,0 +1,51 @@
+/* Forma y tamaño */
+
+
+/* Al armar tu boton, respetar la relación que el width debe ser mayor al height */
+
+@mixin tamanio($width, $height) {
+    width: $width;
+    height: $height;
+    padding: 12px 20px;
+    min-width: 100px;
+    min-height: 25px;
+}
+
+@mixin color($bg, $col, $borde) {
+    background-color: $bg;
+    color: $col;
+    border: 2px solid $borde;
+}
+
+.btn {
+    &-azul {
+        @include color(#0000ff, #fff, #fff);
+        &-chiquito {
+            @extend .btn-azul;
+            @include tamanio(100px, 25px);
+        }
+        &-mediano {
+            @extend .btn-azul;
+            @include tamanio(250px, 45px);
+        }
+        &-grande {
+            @extend .btn-azul;
+            @include tamanio(300px, 55px);
+        }
+    }
+    &-rojo {
+        @include color(#ff0000, #fff, #000);
+        &-chiquito {
+            @extend .btn-rojo;
+            @include tamanio(36px, 24px);
+        }
+        &-mediano {
+            @extend .btn-rojo;
+            @include tamanio(40px, 30px);
+        }
+        &-grande {
+            @extend .btn-rojo;
+            @include tamanio(300px, 55px);
+        }
+    }
+}

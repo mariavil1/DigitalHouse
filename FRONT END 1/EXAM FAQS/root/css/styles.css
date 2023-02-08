@@ -1,0 +1,86 @@
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-section {
+    width: 60vw;
+    height: 90vh;
+    margin: 0 20vw;
+}
+
+.container-subtitle {
+    width: 40%;
+    height: 1080100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-subtitle h3 {
+    font-size: 3rem;
+    margin: 5vh 0;
+}
+
+.container-list {
+    width: 40%;
+    margin: 5vh 0;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    height: 40px;
+    border-radius: 25px 0 0 25px;
+}
+
+.row span {
+    margin-right: 5%;
+    padding: 10px 25px;
+    background-color: blueviolet;
+    border-radius: 25px;
+    position: relative;
+}
+
+.row-p {
+    margin-left: 20%;
+}
+
+.cards {
+    width: 80vw;
+    height: 50vh;
+    margin: 30vh 10vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(232, 232, 232);
+    position: relative;
+}
+
+.cards article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+article img {
+    border: 2px solid grey;
+    width: 150px;
+    position: absolute;
+    top: -20%;
+}
+
+article h3 {
+    margin-top: 15%;
+    border: 2px solid grey;
+}

@@ -1,0 +1,51 @@
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: rgb(214, 187, 240);
+}
+header {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  background-image: url(/root/img/perrisrosa.webp);
+}
+.boton {
+  text-align: right;
+}
+.boton a:link, a:visited{
+  background-color: rgb(193, 30, 199);
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.boton a:hover, a:active{
+  background-color: rgb(250, 127, 219);
+}
+.botoninicio {
+  text-align: center;
+}
+.botoninicio a:link, a:visited{
+  background-color: rgb(193, 30, 199);
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.botoninicio a:hover, a:active{
+  background-color: rgb(250, 127, 219);
+}
+.micuerpo {
+  text-align: center;
+}
+div.seccion1 {
+  border: 10px solid rgb(0, 0, 0);
+  background-color: rgb(250, 127, 219);
+  margin: 10px 150px;
+  padding: 15px;
+}
+.subtitulos {
+    background-color: black;
+    color: beige;
+}
+footer {
+  background-color: rgb(238, 164, 206);
+}

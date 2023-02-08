@@ -1,0 +1,49 @@
+/* ESTILOS GENERALES */
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: rgb(236, 236, 236);
+}
+
+/* ESTILOS DEL HEADER */
+
+img {
+    width:50px;
+    height:50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    background-color: rgba(255, 208, 146, 0.688);
+ }
+
+ nav {
+    width: 30%;
+ }
+
+ ul {
+    list-style-type: none;
+ }
+
+ button {
+    height: 30px;
+    padding: 0 24px;
+ }
+
+/* ESTILOS DEL MAIN */ 
+
+.card {
+    margin: 50px;
+    border: 3px solid #ffffff;
+    height: 450px;
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }

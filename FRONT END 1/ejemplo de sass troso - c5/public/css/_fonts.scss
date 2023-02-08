@@ -1,0 +1,33 @@
+@mixin texto($size, $color) {
+    font-size: $size;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    text-decoration: none;
+    color: $color;
+    font-style: normal;
+}
+
+
+/* EL MIXIN DEBE REUTILIZARSE EN EL MISMO ARCHIVO */
+
+.parrafo {
+    @include texto(24px, #FFFF00);
+}
+
+
+/* armar clase para titulos */
+
+.titulo {
+    @include texto(24px, #ff0000);
+    &-principal {
+        @extend .titulo;
+        font-weight: 800;
+    }
+}
+
+
+/* armar clase para texto tipo copyright */
+
+.texto-simple {
+    @include texto(11px, rgb(164, 164, 164));
+}

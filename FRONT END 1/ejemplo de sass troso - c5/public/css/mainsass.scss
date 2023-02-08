@@ -1,0 +1,24 @@
+/* USO DE PARTIALS -> 
+BLOQUE DE CODIGO QUE YO PIENSO REUTILIZAR EN OTROS PROYECTOS
+EL ARCHIVO SE ESCRIBE CON UN "_"ADELANTE DEL NOMBRE */
+
+@use "_animations.scss";
+@use "_flexcards.scss";
+@use "_fonts.scss";
+@use "_normalize.scss";
+@use "_button.scss";
+
+/* LLAMARLO AL PARTIAL BUTTONS */
+
+
+/* TRAE EL CODIGO DE FLEXCARDS Y ANIMATIONS */
+
+
+/* D.R.Y 
+Don't Repeat Yourself -> No te repitas. 
+*/
+
+
+/* SEPARATION OF CONCERNS -> 
+Separar según función y jurisdicción
+*/

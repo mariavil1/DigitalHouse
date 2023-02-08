@@ -1,0 +1,26 @@
+/* Vamos a traernos partials, cada uno con algún aspecto que necesitemos para usar bien los botones */
+
+@use "_estructura.scss";
+
+/* @use "_animaciones.scss";
+@use "_formas.scss";
+@use "_elementos.scss"; */
+
+
+/* DRY y Separation of Concerns */
+
+
+/* moverlo a otro partial de testeo */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    gap: 10px;
+    border: 1px solid #AAA;
+    padding: 10px;
+}
